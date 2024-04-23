@@ -1,0 +1,47 @@
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void dot(){
+  digitalWrite(LED_BUILTIN,HIGH);
+  delay(300);
+  digitalWrite(LED_BUILTIN,LOW);
+  delay(900);
+}
+
+void space(){
+  digitalWrite(LED_BUILTIN,HIGH);
+  delay(600);
+  digitalWrite(LED_BUILTIN,LOW);
+  delay(900);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+    // Name: Devin
+    // Name in Morse code: -.. , . , ...- , .. , -.
+
+    //letter D
+    space();
+    dot();
+    dot();
+    delay(1500);
+
+    //letter E
+    dot();
+    delay(1500);
+
+    //letter V 
+    dot();
+    dot();
+    dot();
+    space();
+    delay(1500);
+
+    //letter I
+    space();
+    dot();
+    delay(2000);
+}
